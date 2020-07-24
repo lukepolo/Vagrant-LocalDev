@@ -28,6 +28,12 @@ curl -L https://github.com/docker/compose/releases/download/1.25.5/docker-compos
 chmod +x /usr/local/bin/docker-compose
 usermod -aG docker vagrant
 
+## Wireguard
+add-apt-repository ppa:wireguard/wireguard
+apt install wireguard -y
+touch /etc/wireguard/wg0.conf
+systemctl enable wg-quick@wg0
+
 # Cockpit Install
 apt-get install cockpit -y
 

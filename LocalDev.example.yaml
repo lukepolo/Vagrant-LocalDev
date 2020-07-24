@@ -11,7 +11,6 @@ keys:
 folders:
   - map: ~/Code/work/agent
     to: /home/vagrant/code/agent
-    type: "nfs"
 ports:
   - send: 9000
     to: 9000
@@ -37,3 +36,5 @@ ports:
     to: 5443
   - send: 9090
     to: 9090
+  - send: 4888
+    to: 4888
