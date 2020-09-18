@@ -17,7 +17,6 @@ class LocalDev
     # Configure The Box
     config.vm.define settings['name'] ||= 'localDev'
     config.vm.box = settings['box'] ||= 'ubuntu/focal64'
-    config.disksize.size = '15GB'
     config.vm.hostname = 'localDev'
 
     # Configure A Private Network IP
