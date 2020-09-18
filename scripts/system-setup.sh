@@ -33,9 +33,6 @@ apt install wireguard -y
 touch /etc/wireguard/wg0.conf
 systemctl enable wg-quick@wg0
 
-## LIBVIPS Install (SHARP)
-apt-get install -y libvips
-
 # Cockpit Install
 apt-get install cockpit -y
 
