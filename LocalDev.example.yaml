@@ -11,7 +11,19 @@ keys:
 folders:
   - map: ~/Code/work/agent
     to: /home/vagrant/code/agent
+  - map: ~/Code/work/cockpit-plugins
+    to: /home/vagrant/code/cockpit-plugins
+  - map: ~/Code/work/cloud-proxy
+    to: /home/vagrant/code/cloud-proxy
+  - map: ~/Code/work/minion
+    to: /home/vagrant/code/minion
+  - map: ~/Code/work/rtsp-server
+    to: /home/vagrant/code/rtsp-server
+  - map: ~/Code/work/mqtt-dashboard
+    to: /home/vagrant/code/mqtt-dashboard
 ports:
+  - send: 80
+    to: 8080
   - send: 9000
     to: 9000
   - send: 9100
@@ -38,3 +50,7 @@ ports:
     to: 9090
   - send: 4888
     to: 4888
+  - send: 4080
+    to: 4080
+  - send: 3000
+    to: 3000
