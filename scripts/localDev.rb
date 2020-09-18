@@ -36,6 +36,9 @@ class LocalDev
       ]
 
       vb.name = settings['name'] ||= 'localDev'
+      vb.customize ["modifyvm", :id, "--uart1", "0x3F8", "4"]
+      vb.customize ["modifyvm", :id, "--uartmode1", "file", "./ttyS0.log"]
+
       vb.customize ["modifyvm", :id, "--ioapic", "on"]
       vb.customize ['modifyvm', :id, '--memory', settings['memory'] ||= '2048']
       vb.customize ['modifyvm', :id, '--cpus', settings['cpus'] ||= '2']
