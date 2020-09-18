@@ -29,7 +29,6 @@ chmod +x /usr/local/bin/docker-compose
 usermod -aG docker vagrant
 
 ## Wireguard
-add-apt-repository ppa:wireguard/wireguard
 apt install wireguard -y
 touch /etc/wireguard/wg0.conf
 systemctl enable wg-quick@wg0
@@ -69,4 +68,3 @@ truncate -s 0 /etc/machine-id
 /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
 /sbin/mkswap /var/swap.1
 /sbin/swapon /var/swap.1
-
