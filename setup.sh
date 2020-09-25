@@ -13,7 +13,7 @@ function writeToFile() {
     if ! grep -q "function vm" "$FILE"; then
       echo "
 # Call \`vm {command}\` to run vagrant commands
-function vm() {
+function localdev() {
   ( cd ~/localdev && vagrant \$* )
 }
 " >> "$FILE"
