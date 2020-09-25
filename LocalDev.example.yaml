@@ -9,48 +9,8 @@ keys:
   - ~/.ssh/id_rsa
 
 folders:
-  - map: ~/Code/work/agent
-    to: /home/vagrant/code/agent
-  - map: ~/Code/work/cockpit-plugins
-    to: /home/vagrant/code/cockpit-plugins
-  - map: ~/Code/work/cloud-proxy
-    to: /home/vagrant/code/cloud-proxy
-  - map: ~/Code/work/minion
-    to: /home/vagrant/code/minion
-  - map: ~/Code/work/rtsp-server
-    to: /home/vagrant/code/rtsp-server
-  - map: ~/Code/work/mqtt-dashboard
-    to: /home/vagrant/code/mqtt-dashboard
+  - map: ~/Code/folder
+    to: /home/vagrant/code/folder
 ports:
   - send: 80
     to: 8080
-  - send: 9000
-    to: 9000
-  - send: 9100
-    to: 9100
-  - send: 9900
-    to: 9900
-  - send: 9800
-    to: 9800
-  - send: 5432
-    to: 5432
-  - send: 5433
-    to: 5433
-  - send: 1883
-    to: 1883
-  - send: 4400
-    to: 4400
-  - send: 4444
-    to: 4444
-  - send: 443
-    to: 443
-  - send: 5443
-    to: 5443
-  - send: 9090
-    to: 9090
-  - send: 4888
-    to: 4888
-  - send: 4080
-    to: 4080
-  - send: 3000
-    to: 3000
